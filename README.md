@@ -4,14 +4,25 @@ Convert bitmap fonts.
 
 fnt -> xml
 
-Hove use?
+## Instructions
 
+```bash
 git clone https://github.com/speaker73/fntToXml.git
+npm -i
+```
 
-cd fntToXml
+Then, copy the `FNT` bitmap font you want to convert in the root directory and run this on the command line:
 
+```bash
+node index.js fontFileName
+```
+(Note: The `.fnt` extension should be excluded)
 
-node index.js font.fnt
+You could also create a `/fonts` directory and copy FNT fonts into it. In that case, you would run something like this:
+
+```
+node index.js fonts/fontFileName
+```
 
 
 
